@@ -10,7 +10,7 @@ receivers:
 - name: 'email-notifications'    #define email receiver
   email_configs:
     - to: 'your-email@example.com'  #replace with your email address
-      from: 'prometheus@example.@example.com'  #replace with the sender email address
+      from: 'prometheus@example.com'  #replace with the sender email address
       smarthost: 'smtp.example.com:587'  #replace with your SMTP server address and port
       auth_username: 'your_username'  #replace with your SMTP username
       auth_password: 'your_password' #replace  with SMTP password
