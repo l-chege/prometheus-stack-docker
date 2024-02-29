@@ -20,10 +20,10 @@ To deploy prometheus stack on docker, ensure you have the following:
 
 
 ## Installation
-### Provision ec2 using terraform
-### Deploy prometheus stack using docker compose
-### Validate prometheus node exporter metrics
-### Configure grafana dashboards
-### Configure node exporter dashboard 
-### Simulate & test alert manager alerts
-- test - high storage & cpu alert 
+- Provision ec2 using terraform
+- Deploy prometheus stack using docker compose
+- Validate prometheus node exporter metrics
+- Configure grafana dashboards
+- Configure node exporter dashboard 
+- Simulate & test alert manager alerts - test high storage & cpu alert  
+
