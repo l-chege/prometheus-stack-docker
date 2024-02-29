@@ -1,0 +1,23 @@
+#configuration file
+
+global:
+  resolve_timeout: 2m
+
+route:
+  receiver: 'email-notifications' #change receiver to email configurations
+
+receivers:
+- name: 'email-notifications'    #define email receiver
+  email_configs:
+    - to: 'your-email@example.com'  #replace with your email address
+      from: 'prometheus@example.@example.com'  #replace with the sender email address
+      smarthost: 'smtp.example.com:587'  #replace with your SMTP server address and port
+      auth_username: 'your_username'  #replace with your SMTP username
+      auth_password: 'your_password' #replace  with SMTP password
+      send_resolved: true
+
+- name: 'slack-notifications'
+  slack_configs:
+    - api_url: "https://hooks.slack.com/services/YOUR-SLACK-API-URL"  #replace with your slack incoming webhook URL
+      channel: '#general'  #replace with slack channel or user where you want to send notifications
+      send_resolved: true  #set to true to send resolved alerts as well
